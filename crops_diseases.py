@@ -10,7 +10,7 @@ crops = [
     'ruccola', 'kruspersille', 'bladpersille', 'frukthager', 'eng', 'beite', 'korn', "fôrmais", "grasfrøeng",
     "setteløk", "blomsterløk", "hvete", "sommerblomster", "Vårkorn", "rødbeter", "søt- og surkirsebær", "høst- og vårhvete",
     "høst- og vårbygg", "gras", "rødkløver", "bladkål", "knutekål", "fôrkål", "sukkermais", "løk", "hvitløk", "purre",
-    "kløvergjenlegg", "høstrug", "sukkerbeter", "fôrbeter", "rybs", "frukt", "grønnsaker"
+    "kløvergjenlegg", "høstrug", "sukkerbeter", "fôrbeter", "rybs", "frukt", "grønnsaker", "settepotet", "epler", "pærer"
 ]
 
 diseases = [
@@ -26,5 +26,6 @@ diseases = [
     "åkergråurt", "bladherbicid", "Høymole", "løvetann", "soleier", "stornesle", "Geitrams", "sneller", "vikkearter", 
     "bjørk", "osp", "or", "selje", "rust", "grå øyeflekk", "byggbrunflekk", "spragleflekk", "hvetebladprikk", 
     "hveteaksprikk", "Bakkeveronika", "Orientveronika", "Åkersennep", "Åkervortemelk", "microdochium flekk", 
-    "rosa snømugg", "brunflekk", "antraknose", "faks-arter", "åkerkvein", "rugfaks", "engsyre", "småsyre"
+    "rosa snømugg", "brunflekk", "antraknose", "faks-arter", "åkerkvein", "rugfaks", "engsyre", "småsyre", "soppsykdommer",
+    
 ]

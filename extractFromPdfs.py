@@ -32,6 +32,19 @@ def run():
         if not match:
             match = re.search(r'\b(Bruksrettledning|BRUKSRETTLEDNING)\b\s*\n', text)
         
+        elif not match:
+            match = re.search(r'\b(Betingelser for bruk|BETINGELSER FOR BRUK)\b\s*[:\n]', text)
+        
+        elif not match:
+            match = re.search(r'\b(Bruks- og virkeområde|BRUKS- OG VIRKEOMRÅDE)\b\s*\n', text)
+            
+        elif not match:
+            match = re.search(r'\b(Bruksområde og virkeområde|BRUKSOMRÅDE OG VIRKEOMRÅDE)\b\s*\n', text)
+        
+        elif not match:
+            match = re.search(r'\b(Dosering|DOSERING)\b\s*\n', text)
+
+        
         # If a match is found, extract the first sentence after the section header
         if match:
             start_pos = match.end()
