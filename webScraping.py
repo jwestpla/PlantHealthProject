@@ -1,6 +1,7 @@
 import requests
 import json
 import os
+from tqdm import tqdm
 
 def run():
     """
@@ -25,7 +26,7 @@ def run():
     os.makedirs(output_directory, exist_ok=True)
 
     # Loop through each registreringsnummer, construct the download URL, and save the PDF
-    for registreringsnummer in registreringsnummer_list:
+    for registreringsnummer in tqdm(registreringsnummer_list, desc="Downloading PDFs", unit="file"):
         if registreringsnummer:  # Ensure registreringsnummer is not None
             # Convert registreringsnummer to the format used in the file names
             addon = registreringsnummer.replace(".", "_") + ".pdf"
@@ -43,7 +44,7 @@ def run():
             with open(pdf_path, "wb") as file:
                 file.write(response.content)
             
-            print(f"PDF downloaded and saved as {pdf_path}")
+            #print(f"PDF downloaded and saved as {pdf_path}")
             
 if __name__ == "__main__":
     run()
