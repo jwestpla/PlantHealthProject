@@ -26,6 +26,8 @@ def run():
 
     def extract_first_sentence_after_section(text):
         # First, try to find "Bruksområde" or "BRUKSOMRÅDE"
+        # Finds the POSITION in the list where the search word ends!
+        # \b is looking for an ending word, \s for whitespaces and tabs and \n for newline character 
         match = re.search(r'\b(Bruksområde|BRUKSOMRÅDE)\b\s*\n', text)
         
         # If "Bruksområde" is not found, try to find "Bruksrettledning" or "BRUKSRETTLEDNING"

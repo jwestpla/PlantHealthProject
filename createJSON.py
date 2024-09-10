@@ -81,11 +81,8 @@ def run():
         
         for minorUse in product.get("minorUseUtvidelser", []):
             merknad = minorUse.get("merknad", "") or ''
-            print(minorUse)
             
             extracted_crops = extract_crops_from_sentence(merknad, crops)
-            print(extracted_crops)
-            print("")
             extracted_diseases = extract_diseases_from_paragraph(merknad, diseases)
             
             minorUse_crops.extend(extracted_crops)
