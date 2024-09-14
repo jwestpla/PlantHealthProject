@@ -100,7 +100,7 @@ def run():
         return found_diseases
 
     # Directory containing the PDFs
-    pdf_directory = '/Users/joepwestplate/Library/CloudStorage/OneDrive-NorwegianUniversityofLifeSciences/ Prosjekter/plantevern/final_labels'
+    pdf_directory = 'final_labels'
     output_file_path = 'extracted_sentences.txt'
 
     # Open the output file for writing

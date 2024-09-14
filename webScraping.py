@@ -12,7 +12,7 @@ def run():
     base_url = "https://plvm.mattilsynet.no/plantevernmidler/etiketter/"
 
     # Load the JSON data
-    with open('/Users/joepwestplate/Library/CloudStorage/OneDrive-NorwegianUniversityofLifeSciences/ Prosjekter/plantevern/godkjente_plantevernmidler_data.json', 'r', encoding='utf-8') as file:
+    with open('godkjente_plantevernmidler_data.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
 
     # Extract all unique registreringsnummer, skipping None values
